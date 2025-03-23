@@ -14,9 +14,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Telegram API & MongoDB credentials
-TELEGRAM_BOT_TOKEN = "6704057021:AAGRYY_9JDCAntYI3lFEO-N08kZWi1KMXzQ"
+TELEGRAM_BOT_TOKEN = "8058370192:AAHZf7EkiGxbCG9S9XqTv1o7jTc9VLQmuBc"
 MONGO_URI = "mongodb+srv://satyam:ranbal1@satyam.ftaww.mongodb.net/?retryWrites=true&w=majority&appName=satyam"
-DB_NAME = "TEST"
+DB_NAME = "TESTninja"
 
 # Database setup
 client = MongoClient(MONGO_URI)
@@ -28,7 +28,7 @@ settings_collection = db["settings"]
 admins_collection = db["admins"]
 
 # Initial owner ID
-OWNER_USER_ID = 5759284972
+OWNER_USER_ID = 1240179115
 
 # Ensure owner is in admins collection
 if not admins_collection.find_one({"user_id": OWNER_USER_ID}):
